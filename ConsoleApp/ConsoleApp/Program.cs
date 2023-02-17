@@ -6,7 +6,11 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Student student1 = new Student();
+            Student student2 = new Student();
+            Student student3 = new Student();
+            Console.WriteLine(student3.No);
+
         }
     }
 }
