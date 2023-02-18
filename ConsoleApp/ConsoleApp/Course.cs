@@ -9,7 +9,7 @@ namespace ConsoleApp
     {
 
         Student[] _students = new Student[0];
-        public int StudentsGroupLimit = 18;
+        public int StudentsGroupLimit = 2;
 
         public Student[] Students
         {
@@ -18,29 +18,18 @@ namespace ConsoleApp
 
         }
 
-        public int StudentsGroupCount
-        {
-            get
-            {
-                int count = 0;
-
-                foreach (Student student in _students)
-                {
-                    
-                }
-                return count;
-            }
-        }
-
-
 
         public void AddStudent(Student std)
         {
-            if (StudentsGroupCount == StudentsGroupLimit)
-                return;
-
-            Array.Resize(ref _students, _students.Length+1);
-            _students[_students.Length-1] = std;
+            if (StudentsGroupCount(std) != StudentsGroupLimit)
+            {
+                Array.Resize(ref _students, _students.Length + 1);
+                _students[_students.Length-1] = std;
+            }
+            else
+            {
+                Console.WriteLine($"{std.GroupNo} group'un da yer yoxdur");
+            }
             
         }
 
@@ -184,11 +173,18 @@ namespace ConsoleApp
             return wantedArr;
         }
 
-        public static int StudentsGroupCount(Student student)
+        public int StudentsGroupCount(Student student)
         {
-          
+            int count = 0;
+            foreach (var item in Students)
+            {
+                if (item.GroupNo == student.GroupNo)
+                {
+                    count++;
+                }
+            }
 
-
+            return count;
         }
     }
 }

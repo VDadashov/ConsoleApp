@@ -8,7 +8,8 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
            
-            Course course = new Course();
+            
+
 
         }
     }
