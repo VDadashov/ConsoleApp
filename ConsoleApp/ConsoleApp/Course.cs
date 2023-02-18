@@ -183,5 +183,12 @@ namespace ConsoleApp
             
             return wantedArr;
         }
+
+        public static int StudentsGroupCount(Student student)
+        {
+          
+
+
+        }
     }
 }
