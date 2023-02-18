@@ -68,26 +68,24 @@ namespace ConsoleApp
 
         public static bool CheckFullName(string fullName)
         {
-            if (string.IsNullOrEmpty(fullName)) return false;
+            if (string.IsNullOrWhiteSpace(fullName)) return false;
 
             var words = fullName.Split(' ');
 
             if (words.Length != 2) return false;
 
-
             if (!char.IsUpper(words[0][0]) || !char.IsUpper(words[1][0]) || words[0].Length < 3 || words[1].Length < 3) return false;
 
-            for (int i = 0; i < words[0].Length; i++)
+            for (int i = 1; i < words[0].Length; i++)
             {
                 if (!char.IsLower(words[0][i]))
                     return false;
             }
 
-            for (int i = 0; i < words[1].Length; i++)
+            for (int i = 1; i < words[1].Length; i++)
             {
-                if (char.IsLower(words[1][i]))
+                if (!char.IsLower(words[1][i]))
                     return false;
-
             }
 
             return true;

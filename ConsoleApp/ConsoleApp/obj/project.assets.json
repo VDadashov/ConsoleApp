@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vusal Dadasov\\OneDrive\\Masaüstü\\CodeAcademy\\C#\\ConsoleApp\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Vusal Dadasov\\OneDrive\\Masaüstü\\ConsoleApp\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\Users\\Vusal Dadasov\\OneDrive\\Masaüstü\\CodeAcademy\\C#\\ConsoleApp\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
+      "projectPath": "C:\\Users\\Vusal Dadasov\\OneDrive\\Masaüstü\\ConsoleApp\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Vusal Dadasov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vusal Dadasov\\OneDrive\\Masaüstü\\CodeAcademy\\C#\\ConsoleApp\\ConsoleApp\\ConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\Vusal Dadasov\\OneDrive\\Masaüstü\\ConsoleApp\\ConsoleApp\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vusal Dadasov\\AppData\\Roaming\\NuGet\\NuGet.Config",
