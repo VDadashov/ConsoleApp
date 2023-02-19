@@ -96,16 +96,21 @@ namespace ConsoleApp
             if (string.IsNullOrEmpty(groupNo))
                 return false;
 
-            if (!char.IsLetter(groupNo[0]))
+            if (!char.IsLetter(groupNo[0]) || !char.IsUpper(groupNo[0]))
+                return false;
+
+            if (groupNo.Length != 4)
                 return false;
 
             for (int i = 1; i < groupNo.Length; i++)
             {
-                if (!char.IsDigit(groupNo[1]))
+                if (!char.IsDigit(groupNo[i]))
                 {
                     return false;
                 }
             }
+
+
 
             return true;
         }

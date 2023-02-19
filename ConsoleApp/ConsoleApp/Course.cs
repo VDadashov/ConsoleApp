@@ -87,6 +87,10 @@ namespace ConsoleApp
                     count++;
                 }
             }
+            if (count == 0)
+            {
+                return -1;
+            }
             return sum / count;
         }
 
