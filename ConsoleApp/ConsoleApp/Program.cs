@@ -21,7 +21,8 @@ namespace ConsoleApp
                 Console.WriteLine("5. Umumi axtarish");
                 Console.WriteLine("6. Telebenin qrupunu deyish");
                 Console.WriteLine("7. Secilmish telebeni sil");
-                Console.WriteLine("8. Secilmis qrupun ortalama balina bax\n");
+                Console.WriteLine("8. Secilmis qrupun ortalama balina bax");
+                Console.WriteLine("--- Prosesi bitirmek ucun 0'a basin ---\n");
 
                 Console.WriteLine("Secim: ");
                 opt = Console.ReadLine();
@@ -203,9 +204,10 @@ namespace ConsoleApp
                         }
                         
                         break;
+                    case "0":
+                        break;
 
                     default:
-                        Console.WriteLine("Secim yanlisdir,Yeniden daxil edin: ");
                         break;
                 }
             } while (opt != "0");
